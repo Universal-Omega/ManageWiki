@@ -182,7 +182,7 @@
 				buildIndex();
 			}
 		} );
-		var $noResults = $( '<div>' ).addClass( 'managewiki-noresults' ).text( mw.msg( 'managewiki-noresults' ) );
+		var $noResults = $( '<div>' ).addClass( 'managewiki-search-noresults' ).text( mw.msg( 'managewiki-search-noresults' ) );
 		search.on( 'change', function ( val ) {
 			if ( !index ) {
 				// In case 'focus' hasn't fired yet

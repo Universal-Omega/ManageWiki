@@ -12,7 +12,7 @@ use Miraheze\ManageWiki\FormFactory\ManageWikiFormFactory;
 use Miraheze\ManageWiki\Helpers\ManageWikiNamespaces;
 use Miraheze\ManageWiki\Helpers\ManageWikiPermissions;
 use Miraheze\ManageWiki\ManageWiki;
-use OOUI\FieldLayout,
+use OOUI\FieldLayout;
 use OOUI\SearchInputWidget;
 use SpecialPage;
 use UserGroupMembership;

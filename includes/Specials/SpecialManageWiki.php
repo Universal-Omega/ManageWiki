@@ -12,6 +12,7 @@ use Miraheze\ManageWiki\FormFactory\ManageWikiFormFactory;
 use Miraheze\ManageWiki\Helpers\ManageWikiNamespaces;
 use Miraheze\ManageWiki\Helpers\ManageWikiPermissions;
 use Miraheze\ManageWiki\ManageWiki;
+use OOUI\FieldLayout,
 use OOUI\SearchInputWidget;
 use SpecialPage;
 use UserGroupMembership;
@@ -160,11 +161,17 @@ class SpecialManageWiki extends SpecialPage {
 			$formFactory = new ManageWikiFormFactory();
 			$htmlForm = $formFactory->getForm( $wiki, $remoteWiki, $this->getContext(), $this->config, $module, strtolower( $special ), $filtered );
 
-			$out->addHTML( new SearchInputWidget( [
-				'placeholder' => $this->msg( 'managewiki-search' )->text(),
-				'classes' => [ 'managewiki-search' ],
-				'infusable' => true,
-			] ) );
+			$out->addHTML( new FieldLayout(
+				new SearchInputWidget( [
+					'placeholder' => $this->msg( 'managewiki-search' )->text(),
+				] ),
+				[
+					'classes' => [ 'managewiki-search' ],
+					'label' => $this->msg( 'managewiki-search' )->text(),
+					'invisibleLabel' => true,
+					'infusable' => true,
+				]
+			) );
 
 			$htmlForm->show();
 		}

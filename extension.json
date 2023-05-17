@@ -138,6 +138,7 @@
 				"ext.managewiki.oouiform.tabs.js"
 			],
 			"messages": [
+				"managewiki-noresults",
 				"managewiki-review-title",
 				"managewiki-save",
 				"managewiki-warning-changes"

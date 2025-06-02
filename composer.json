@@ -55,6 +55,8 @@
 			"url": "https://github.com/wikimedia/mediawiki-tools-phan-PerfCheckPlugin"
 		}
 	],
+	"minimum-stability": "dev",
+	"prefer-stable": true,
 	"config": {
 		"prepend-autoloader": false,
 		"optimize-autoloader": true,

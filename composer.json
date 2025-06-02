@@ -36,9 +36,6 @@
 		"php-parallel-lint/php-console-highlighter": "1.0.0",
 		"php-parallel-lint/php-parallel-lint": "1.4.0"
 	},
-	"replace": {
-		"phan/phan": "5.4.5"
-	},
 	"scripts": {
 		"fix": [
 			"minus-x fix .",
@@ -55,7 +52,7 @@
 	"repositories": [
 		{
 			"type": "vcs",
-			"url": "https://github.com/wikimedia/mediawiki-tools-phan-PerfCheckPlugin"
+			"url": "https://github.com/Universal-Omega/mediawiki-tools-phan-PerfCheckPlugin"
 		}
 	],
 	"minimum-stability": "dev",

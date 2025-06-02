@@ -59,6 +59,7 @@ $cfg['plugins'] = array_merge( $cfg['plugins'], [
 ] );
 
 $cfg['plugins'][] = __DIR__ . '/plugins/NoOptionalParamPlugin.php';
+$cfg['plugins'][] = __DIR__ . '/../vendor/mediawiki/phan-performance-check-plugin/PerformanceCheckPlugin.php';
 
 $cfg['analyze_signature_compatibility'] = true;
 $cfg['enable_class_alias_support'] = false;

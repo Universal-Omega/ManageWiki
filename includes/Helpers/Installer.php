@@ -28,6 +28,7 @@ class Installer {
 	) {
 	}
 
+	/** @param string $test @phan-optional-param */
 	public function execute( array $actions, bool $install, string $test = '' ): bool {
 		// Produces an array of steps and results (so we can fail what we can't do but apply what works)
 		$stepResponse = [];
